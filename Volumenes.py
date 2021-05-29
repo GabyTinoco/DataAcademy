@@ -15,20 +15,18 @@ def prisma_triangular() :
 
     print("El volumen del prisma es:" + str(volumen))
    
-
 def cubo() :
     longitud = input("Introduzca la longitud del cilindro")
     volumen = pow(float(longitud), 3)
     print("El volumen del cubo es:  " + str(volumen))
  
-
-
 def cilindro() : 
     menu_cilindro = """
         ¿Cómo desea calcular el volumen del cilindro?
         1. Con la formula de πR2h
          2. Con la formula de Abh 
-    """
+     """
+    print(menu_cilindro)
     opcion_cilindro = input("Introduce el número de la opción del menu:")
     opcion_cilindro = int(opcion_cilindro)
 
@@ -72,8 +70,7 @@ def run():
     elif(opcion == 2) :
         cubo()
     elif(opcion == 3) :
-        prisma_triangular
-
+        prisma_triangular()
     else:
         print("Ingrese una opción valida")
 

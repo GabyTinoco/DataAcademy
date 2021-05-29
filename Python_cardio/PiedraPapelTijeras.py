@@ -20,7 +20,7 @@ def run():
     print(menu_opciones)
 
     i = 0
-    while( i < 4):
+    while( i< 3):
         contador_jugadas = i + 1
         jugada1 = input("Intento No." + str(contador_jugadas) + " de" + jugador1)
         jugada1 = int(jugada1)
